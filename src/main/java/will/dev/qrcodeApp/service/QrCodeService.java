@@ -43,7 +43,7 @@ public class QrCodeService {
     public QrCodeMetadata generateQrCode(String pdfId, String logoPath) throws IOException, WriterException {
         // Vérification que le PDF existe
         if (!pdfService.pdfExists(pdfId)) {
-            throw new IllegalArgumentException("PDF non trouvé avec l'ID: " + pdfId);
+            throw new IllegalArgumentException("PDF non trouvé avec l'id: " + pdfId);
         }
 
         // Vérification si un QR code existe déjà pour ce PDF
