@@ -37,7 +37,7 @@ public class QrCodeService {
     @Value("${app.qrcode.dir:uploads/qrcodes}")
     private String qrCodeDir;
 
-    @Value("${API_URL}")
+    @Value("${BASE_URL}")
     private String baseUrl;
 
     public QrCodeMetadata generateQrCode(String pdfId, String logoPath) throws IOException, WriterException {

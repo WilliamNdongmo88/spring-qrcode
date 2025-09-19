@@ -30,7 +30,7 @@ public class QrCodeController {
     @Autowired
     private QrCodeService qrCodeService;
 
-    @Value("${API_URL}")
+    @Value("${BASE_URL}")
     private String baseUrl;
 
     @PostMapping("/generate/{pdfId}")
