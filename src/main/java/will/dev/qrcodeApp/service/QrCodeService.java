@@ -118,8 +118,8 @@ public class QrCodeService {
             if (logoFile.exists()) {
                 BufferedImage logoImage = ImageIO.read(logoFile);
                 if (logoImage != null) {
-                    int logoWidth = width / 8; // Taille du logo (ex: 1/4 de la taille du QR code)
-                    int logoHeight = height / 8;
+                    int logoWidth = width / 6; // Taille du logo (ex: 1/4 de la taille du QR code)
+                    int logoHeight = height / 6;
                     int x = (width - logoWidth) / 2;
                     int y = (height - logoHeight) / 2;
 
