@@ -101,7 +101,18 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+
 		</plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>application-dev.properties</exclude>
+                </excludes>
+            </resource>
+        </resources>
 	</build>
 
 </project>
